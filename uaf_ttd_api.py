@@ -47,7 +47,6 @@ if (myResponse.ok):
         i=i+1
         if (x["ReportExecutionState"] == "Complete"):
             if(x["ReportScheduleId"] == 1258768):
-                #x["ReportEndDateExclusive"] = (x["ReportEndDateExclusive"][0:9])#.decode('utf-8').strftime("%Y-%m-%d"))
                 if (x["ReportEndDateExclusive"][0:10].encode('utf-8') == str(date.today())):
                     file = requests.get(x["ReportDeliveries"][-1]["DownloadURL"], headers={'TTD-Auth': authToken})
                     urlData = file.content
