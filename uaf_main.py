@@ -71,11 +71,11 @@ def dcm(df2):
 
 def main():
     storage_client = storage.Client.from_service_account_json(
-    folder + '/amnet-dcm01.json'
+    folder + '/axxxx-dcm01.json'
     )
     
     #df1 (ttd)
-    bucket_name = 'amnet_ttd_reports'
+    bucket_name = 'axxxx_ttd_reports'
     bucket = storage_client.get_bucket(bucket_name)
     blobs = list_blobs(bucket)
     #Insert TTD Report ID
@@ -86,7 +86,7 @@ def main():
     df1 = ttd(report_id)
     
     #df2 (dcm)
-    bucket_name = 'amnet_dcm_reports'
+    bucket_name = 'axxxx_dcm_reports'
     bucket = storage_client.get_bucket(bucket_name)
     blobs = list_blobs(bucket)
     #Insert DCM Report ID
@@ -101,7 +101,7 @@ def main():
     #gcs upload
     filename_out = "merge_" + report_id
     df_all.to_csv(folder + '/{filename}'.format(filename=filename_out), sep=",")
-    bucket = storage_client.get_bucket("amnet_ttd_reports")
+    bucket = storage_client.get_bucket("axxxx_ttd_reports")
     blob = Blob(filename_out, bucket)
     upload_to_gcs(blob, folder + "/" + filename_out)
     
