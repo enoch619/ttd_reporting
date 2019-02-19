@@ -19,9 +19,9 @@ from datetime import date
 
 # Input Parameters
 url = 'https://api.thetradedesk.com/v3/myreports/reportexecution/query/advertisers'
-authToken = '2xGhxrGos5NcKJaiBg1Dz08D2vBibIVzZv/XXXXX'
+authToken = '2xGhXXXXXXXXXXXX/XXXXX'
 payload = {
-    'AdvertiserIds': ['00fug1i'],
+    'AdvertiserIds': ['XXXXXX'],
     'PageStartIndex': 0,
     'PageSize': 10000
 }
