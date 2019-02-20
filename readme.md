@@ -4,7 +4,7 @@ When running performance campaign and ad served on DCM, DSP metrics have to comb
 ## Environment:
 Airflow on Cloud Compute Engine
 
-## Tasks:
+## Task Sequence:
 1. uaf_ttd_api.py: TTD report through API to Cloud storage
 2. uaf_main.py: clean and merge
 
