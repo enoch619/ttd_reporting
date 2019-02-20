@@ -11,5 +11,5 @@ Airflow on Cloud Compute Engine
 ## Requirement:
 1. TTD auth token
 2. TTD scheduled report ID
-3. DCM client secret json
+3. Google Cloud client secret json
 4. Airflow dags
