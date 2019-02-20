@@ -1,10 +1,12 @@
 # TTD reporting
 Create a merged TTD and DCM report with campaign metrics and conversion count for Tableau and Datorama use
 
-## Steps:
-1. Download TTD report through API to Cloud storage with uaf_ttd_api.py
-2. Download, clean and merge with uaf_main.py
-3. Put them on airflow for automation
+## Environment:
+Airflow on Cloud Compute Engine
+
+## Tasks:
+1. uaf_ttd_api.py: TTD report through API to Cloud storage
+2. uaf_main.py: clean and merge
 
 ## Requirement:
 1. TTD auth token
