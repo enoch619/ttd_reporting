@@ -6,7 +6,7 @@ Airflow on Cloud Compute Engine
 
 ## Task Sequence:
 1. uaf_ttd_api.py: TTD report through API to Cloud storage
-2. uaf_main.py: clean and merge
+2. uaf_main.py: clean and merge, re-upload to Cloud storage
 
 ## Requirement:
 1. TTD auth token
