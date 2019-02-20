@@ -1,5 +1,5 @@
 # TTD reporting
-Create a merged TTD and DCM report with campaign metrics and conversion count for Tableau and Datorama use
+When running performance campaign and ad served on DCM, DSP metrics have to combine with DCM conversion.  These scripts utilise our existing pipeline on Airflow and to create a merged TTD and DCM report for analytics and report use on Datorama and Tableau.
 
 ## Environment:
 Airflow on Cloud Compute Engine
@@ -10,5 +10,6 @@ Airflow on Cloud Compute Engine
 
 ## Requirement:
 1. TTD auth token
-2. DCM client secret json
-3. Airflow dags
+2. TTD scheduled report ID
+3. DCM client secret json
+4. Airflow dags
